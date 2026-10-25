@@ -12,6 +12,8 @@ Typical complaints a custom style can fix: blue cycle paths that are far too thi
 
 More details (file formats, map tiles, theme structure, an example of thinning cycle paths) are in the [Map styling](https://github.com/bertt/WahooDesktop/blob/main/docs/MAPS.md#map-styling) section of the Wahoo Desktop docs. The override behaviour comes from the community project [wahoo-vtm-themer](https://github.com/BadmanBarista/wahoo-vtm-themer).
 
+Which OSM tags and values the map tiles actually contain (and can therefore be matched in a style) is listed in [TAGS.md](TAGS.md).
+
 > Most of this is reverse-engineered from the device, not official Wahoo documentation. Use at your own risk and keep the original file.
 
 ## Default styles per firmware
