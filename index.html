@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wahoo Map Styles</title>
+<meta name="description" content="Share and discover Wahoo ELEMNT map styles (vtm-elemnt.xml).">
+<style>
+  :root {
+    --bg: #0f1419; --card: #182028; --text: #e6edf3; --muted: #9aa7b4;
+    --accent: #00a9ff; --border: #2a3641;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f5f8fa; --card: #fff; --text: #14202b; --muted: #5a6b7a; --accent: #0070c0; --border: #d8e0e7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  a { color: var(--accent); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 64px 0 40px; text-align: center; background: linear-gradient(135deg, #003a66, #0070c0 60%, #00a9ff); color: #fff; }
+  header h1 { margin: 0 0 8px; font-size: 2.6rem; }
+  header p { margin: 0 auto 24px; max-width: 600px; font-size: 1.15rem; opacity: .92; }
+  .btn { display: inline-block; padding: 10px 22px; margin: 4px; border-radius: 8px; background: #fff; color: #003a66; font-weight: 600; text-decoration: none; }
+  .btn.alt { background: transparent; color: #fff; border: 2px solid #fff; padding: 8px 20px; }
+  section { padding: 36px 0 0; }
+  h2 { margin: 0 0 12px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .card h3 { margin-top: 0; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  th { font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  ol li { margin-bottom: 6px; }
+  code { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: .92em; }
+  footer { padding: 48px 0; text-align: center; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Wahoo Map Styles</h1>
+    <p>Share and discover custom map styles (<code style="color:#003a66">vtm-elemnt.xml</code>) for your Wahoo ELEMNT. Thinner cycle paths, calmer colours, your own look.</p>
+    <a class="btn" href="https://github.com/bertt/WahooMapStyles">View on GitHub</a>
+    <a class="btn alt" href="https://github.com/bertt/WahooMapStyles/tree/main/styles">Browse styles</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>How it works</h2>
+    <p>The look of the ELEMNT map (colours, line widths, visible features) is controlled by a <a href="https://github.com/mapsforge/vtm">VTM</a> render theme, not by the map tiles. The default theme is bundled in the firmware. Put a file at <code>maps/vtm-elemnt/vtm-elemnt.xml</code> on the device to override it. Delete it to go back to the default.</p>
+    <p class="muted">Mostly reverse-engineered, not official Wahoo documentation. Keep the original file and use at your own risk. Background: <a href="https://github.com/bertt/WahooDesktop/blob/main/docs/MAPS.md#map-styling">Map styling</a>.</p>
+  </section>
+
+  <section>
+    <h2>Default styles per firmware</h2>
+    <table>
+      <thead><tr><th>Firmware</th><th>Files</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>18001 (BOLT2, 180.01)</td>
+          <td>
+            <a href="https://github.com/bertt/WahooMapStyles/blob/main/styles/18001/default/vtm-elemnt.xml">vtm-elemnt.xml</a>,
+            <a href="https://github.com/bertt/WahooMapStyles/blob/main/styles/18001/default/vtm-elemnt-enhanced.xml">vtm-elemnt-enhanced.xml</a>,
+            <a href="https://github.com/bertt/WahooMapStyles/blob/main/styles/18001/default/rendertheme.xsd">rendertheme.xsd</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Have the default of another firmware? Please add it.</p>
+  </section>
+
+  <section>
+    <h2>Using a style</h2>
+    <ol>
+      <li>Download the <code>vtm-elemnt.xml</code> (or <code>vtm-elemnt-enhanced.xml</code>) matching your firmware.</li>
+      <li>Connect your ELEMNT over USB (MTP).</li>
+      <li>Create <code>maps/vtm-elemnt/</code> on the device and copy the file there.</li>
+      <li>Restart the device.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Contribute</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Share your style</h3>
+        <p>Open a pull request with <code>styles/&lt;firmware&gt;/&lt;name&gt;/vtm-elemnt.xml</code>. Add a short description and a screenshot.</p>
+        <a href="https://github.com/bertt/WahooMapStyles/pulls">Pull requests</a>
+      </div>
+      <div class="card">
+        <h3>Report a problem</h3>
+        <p>Cycle paths too thick, unreadable colours, missing roads? Open an issue with style, device and firmware.</p>
+        <a href="https://github.com/bertt/WahooMapStyles/issues">Issues</a>
+      </div>
+      <div class="card">
+        <h3>Get featured</h3>
+        <p>Beautiful and useful styles get an extra mention in the README.</p>
+        <a href="https://github.com/bertt/WahooMapStyles#featured-styles">Featured styles</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Not affiliated with Wahoo Fitness. <a href="https://github.com/bertt/WahooMapStyles">github.com/bertt/WahooMapStyles</a></div>
+</footer>
+</body>
+</html>
