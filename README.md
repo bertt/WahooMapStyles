@@ -28,9 +28,9 @@ The 18001 files originate from [WahooDesktop](https://github.com/bertt/WahooDesk
 
 Styles live in `styles/<firmware>/<style-name>/` and each contains a `vtm-elemnt.xml` and/or a `vtm-elemnt-enhanced.xml` (the variant with extra area fills such as golf courses and schools), ideally with a short `README.md` and a screenshot.
 
-| Style | Firmware | Author | Description |
-| ----- | -------- | ------ | ----------- |
-| *Your style here* | | | |
+| Style | Author | Description |
+| ----- | ------ | ----------- |
+| *No styles yet, be the first!* | | |
 
 ### Featured styles
 
