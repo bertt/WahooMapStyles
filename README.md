@@ -40,7 +40,7 @@ Especially nice styles get an extra mention here. 🏆
 
 ## Using a style
 
-1. Download the `vtm-elemnt.xml` (or `vtm-elemnt-enhanced.xml`) of the style you want (make sure it matches your firmware).
+1. Download the `vtm-elemnt.xml` (or `vtm-elemnt-enhanced.xml`) of the style you want (check that it works with your firmware).
 2. Connect your ELEMNT over USB (MTP).
 3. Create the folder `maps/vtm-elemnt/` on the device and copy the file there. Keep the file name as it is.
 4. Restart the device.
