@@ -26,7 +26,7 @@ The 18001 files originate from [WahooDesktop](https://github.com/bertt/WahooDesk
 
 ## Community styles
 
-Styles live in `styles/<firmware>/<style-name>/` and each contains a `vtm-elemnt.xml`, ideally with a short `README.md` and a screenshot.
+Styles live in `styles/<firmware>/<style-name>/` and each contains a `vtm-elemnt.xml` and/or a `vtm-elemnt-enhanced.xml` (the variant with extra area fills such as golf courses and schools), ideally with a short `README.md` and a screenshot.
 
 | Style | Firmware | Author | Description |
 | ----- | -------- | ------ | ----------- |
@@ -40,9 +40,9 @@ Especially nice styles get an extra mention here. 🏆
 
 ## Using a style
 
-1. Download the `vtm-elemnt.xml` of the style you want (make sure it matches your firmware).
+1. Download the `vtm-elemnt.xml` (or `vtm-elemnt-enhanced.xml`) of the style you want (make sure it matches your firmware).
 2. Connect your ELEMNT over USB (MTP).
-3. Create the folder `maps/vtm-elemnt/` on the device and copy the file there.
+3. Create the folder `maps/vtm-elemnt/` on the device and copy the file there. Keep the file name as it is.
 4. Restart the device.
 
 To go back to the default: delete the file (or folder) and restart.
@@ -51,7 +51,7 @@ To go back to the default: delete the file (or folder) and restart.
 
 Everyone is welcome, and sharing is encouraged!
 
-- **Share your own style:** open a pull request that adds `styles/<firmware>/<your-style-name>/vtm-elemnt.xml`. Start from the default of your firmware, keep changes focused, and describe what you changed (a screenshot helps).
+- **Share your own style:** open a pull request that adds `styles/<firmware>/<your-style-name>/vtm-elemnt.xml` (and/or `vtm-elemnt-enhanced.xml`). Start from the default of your firmware, keep changes focused, and describe what you changed (a screenshot helps).
 - **Report a problem with a style:** found something odd, such as cycle paths that are too thick, unreadable colours or missing roads? [Open an issue](../../issues) with the style name, device, firmware and ideally a screenshot.
 - **Add a default for another firmware:** PRs with the bundled default of other firmware numbers are very welcome.
 
