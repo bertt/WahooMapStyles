@@ -49,6 +49,45 @@ Especially nice styles get an extra mention here. 🏆
 
 To go back to the default: delete the file (or folder) and restart.
 
+## Previewing a style on your desktop
+
+You can test a style without a device by rendering a Mapsforge `.map` file with the VTM desktop viewer.
+
+### Installation
+
+Requirements: [Git](https://git-scm.com/) and a JDK (Java 17 or newer, tested with Temurin 25).
+
+```
+git clone --depth 1 https://github.com/mapsforge/vtm
+cd vtm
+```
+
+The Android modules need the Android SDK, which you don't need here. Comment out these lines in `settings.gradle`:
+
+```
+//include ':vtm-android'
+//include ':vtm-android-example'
+//include ':vtm-android-mvt'
+```
+
+Then build the playground (the jar ends up in `vtm-playground/build/libs/`):
+
+```
+gradlew :vtm-playground:fatJar
+```
+
+### Start
+
+Pass the style first, then one or more `.map` files:
+
+```
+java -cp vtm-playground/build/libs/vtm-playground-master-SNAPSHOT-jar-with-dependencies.jar org.oscim.test.MapsforgeTest path/to/vtm-elemnt.xml path/to/map.map
+```
+
+- Drag to pan, scroll wheel to zoom.
+- Edit the style and press **F5** to reload it.
+- If the log shows `invalid resource: patterns/...png`, put the referenced `patterns/` folder next to the style file. Without it, pattern fills (forest, wetland) are not drawn.
+
 ## Contribute
 
 Everyone is welcome, and sharing is encouraged!
