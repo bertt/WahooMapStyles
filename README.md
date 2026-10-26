@@ -78,6 +78,8 @@ Then build the playground (the jar ends up in `vtm-playground/build/libs/`):
 gradlew :vtm-playground:fatJar
 ```
 
+`gradlew` is the Gradle Wrapper in the root of the cloned `vtm` repo, so you don't need to install Gradle yourself. The first run downloads Gradle automatically. On Windows use `gradlew.bat` (`.\gradlew.bat` in PowerShell); on Linux/macOS use `./gradlew`.
+
 ### Start
 
 Pass the style first, then one or more `.map` files:
