@@ -53,6 +53,8 @@ To go back to the default: delete the file (or folder) and restart.
 
 You can test a style without a device by rendering a Mapsforge `.map` file with the VTM desktop viewer.
 
+![VTM desktop viewer rendering a map with vtm-elemnt.xml](docs/vtm-preview.png)
+
 ### Installation
 
 Requirements: [Git](https://git-scm.com/) and a JDK (Java 17 or newer, tested with Temurin 25).
