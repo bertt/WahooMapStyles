@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://opensciencemap.org/rendertheme https://raw.githubusercontent.com/mapsforge/vtm/master/resources/rendertheme.xsd">
 
 	<!--
-		vtm_elemnt_2026: a modern cycling map style for the Wahoo ELEMNT.
+		vtm-elemnt-2026: a modern cycling map style for the Wahoo ELEMNT.
 		Emphasis: small bike-able paths (cycleways, tracks, paths), hiking paths stay visible,
 		motorways are muted and marked as 'no cycling'. Rename to vtm-elemnt.xml to use on the device.
 		Colour legend: blue = cycleway, orange = track, orange-red dashed = path, purple dashed = path/footway

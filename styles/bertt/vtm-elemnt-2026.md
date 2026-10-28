@@ -1,6 +1,8 @@
-# vtm_elemnt_2026
+# vtm-elemnt-2026
 
 A modern cycling map style for the Wahoo ELEMNT, written for the tags in `84.map`.
+
+Style file: [vtm-elemnt-2026.xml](vtm-elemnt-2026.xml)
 
 ## Design choices
 
@@ -21,7 +23,7 @@ Colours below are given for the light and the dark variant.
 
 ## Legend
 
-Rename `vtm_elemnt_2026.xml` to `vtm-elemnt.xml` to use it on the device, and keep the `symbols/` folder next to it. Without the icons you still see a coloured dot at each POI.
+Rename `vtm-elemnt-2026.xml` to `vtm-elemnt.xml` to use it on the device, and keep the `symbols/` folder next to it. Without the icons you still see a coloured dot at each POI.
 
 ## Bike and hiking paths (top of the stack)
 
