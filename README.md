@@ -14,6 +14,8 @@ More details (file formats, map tiles, theme structure, an example of thinning c
 
 Which OSM tags and values the map tiles actually contain (and can therefore be matched in a style) is listed in [TAGS.md](TAGS.md).
 
+The 64 colors the ELEMNT Bolt v2 display can show are listed in [wahoo_colors_64.md](wahoo_colors_64.md).
+
 > Most of this is reverse-engineered from the device, not official Wahoo documentation. Use at your own risk and keep the original file.
 
 ## Default styles per firmware
