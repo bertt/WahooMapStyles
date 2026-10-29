@@ -7,7 +7,7 @@
 		vtm-elemnt-2026: a modern cycling map style for the Wahoo ELEMNT.
 		Emphasis: small bike-able paths (cycleways, tracks, paths), hiking paths stay visible,
 		motorways are muted and marked as 'no cycling'. Rename to vtm-elemnt.xml to use on the device.
-		Colour legend: blue = cycleway, orange = track, orange-red dashed = path, purple dashed = path/footway
+		Colour legend: green = cycleway, orange = track, orange-red dashed = path, purple dashed = path/footway
 		with bicycle=yes, brown dotted = hiking path, red dashes + sign = no cycling.
 		Only the 64 colours of the Bolt 2 display are used (see wahoo_colors_64.md in the repo root).
 		Icons live in symbols/ next to this file. A coloured dot is drawn below each icon as fallback.
@@ -27,11 +27,11 @@
 	<!-- region outline layers -->
 	<m e="way" k="highway" zoom-min="8">
 		<outline-layer cat="bolt2" id="bolt2-halo" stroke="#FFFFFF" width="0.3"/>
-		<outline-layer cat="bolt2" id="bolt2-casing" stroke="#AAAAAA" width="0.35"/>
+		<outline-layer cat="bolt2" id="bolt2-casing" stroke="#55AA55" width="0.35"/>
 		<outline-layer cat="bolt2-dark" id="bolt2-dark-halo" stroke="#000000" width="0.3"/>
 		<outline-layer cat="bolt2-dark" id="bolt2-dark-casing" stroke="#000000" width="0.35"/>
 		<outline-layer cat="roam2" id="roam2-halo" stroke="#FFFFFF" width="0.3"/>
-		<outline-layer cat="roam2" id="roam2-casing" stroke="#AAAAAA" width="0.35"/>
+		<outline-layer cat="roam2" id="roam2-casing" stroke="#55AA55" width="0.35"/>
 		<outline-layer cat="roam2-dark" id="roam2-dark-halo" stroke="#000000" width="0.3"/>
 		<outline-layer cat="roam2-dark" id="roam2-dark-casing" stroke="#000000" width="0.35"/>
 	</m>
@@ -249,15 +249,15 @@
 			</m>
 			<m e="way" k="highway" v="residential|living_street|road|unclassified" zoom-min="12">
 				<line cat="bolt2" stroke="#FFFFFF" width="1.5" outline="bolt2-casing"/>
-				<line cat="bolt2-dark" stroke="#555555" width="1.5" outline="bolt2-dark-casing"/>
+				<line cat="bolt2-dark" stroke="#55AA55" width="1.5" outline="bolt2-dark-casing"/>
 				<line cat="roam2" stroke="#FFFFFF" width="1.5" outline="roam2-casing"/>
-				<line cat="roam2-dark" stroke="#555555" width="1.5" outline="roam2-dark-casing"/>
+				<line cat="roam2-dark" stroke="#55AA55" width="1.5" outline="roam2-dark-casing"/>
 			</m>
 			<m e="way" k="highway" v="service" zoom-min="14">
 				<line cat="bolt2" stroke="#FFFFFF" width="0.9" outline="bolt2-casing"/>
-				<line cat="bolt2-dark" stroke="#555555" width="0.9" outline="bolt2-dark-casing"/>
+				<line cat="bolt2-dark" stroke="#55AA55" width="0.9" outline="bolt2-dark-casing"/>
 				<line cat="roam2" stroke="#FFFFFF" width="0.9" outline="roam2-casing"/>
-				<line cat="roam2-dark" stroke="#555555" width="0.9" outline="roam2-dark-casing"/>
+				<line cat="roam2-dark" stroke="#55AA55" width="0.9" outline="roam2-dark-casing"/>
 			</m>
 		</m>
 	</m>
@@ -266,16 +266,16 @@
 	<m e="way" k="tunnel" v="~|no|false">
 		<m e="way" k="highway" v="residential|living_street|road|unclassified|tertiary|tertiary_link|secondary|secondary_link|primary|primary_link" zoom-min="13">
 			<m k="cycleway_track" v="cw_track_both|cw_track_right|cw_track_left|cw_track_oneway">
-				<line cat="bolt2" stroke="#0000FF" width="0.5"/>
-				<line cat="bolt2-dark" stroke="#00AAFF" width="0.5"/>
-				<line cat="roam2" stroke="#0000FF" width="0.5"/>
-				<line cat="roam2-dark" stroke="#00AAFF" width="0.5"/>
+				<line cat="bolt2" stroke="#00AA00" width="0.5"/>
+				<line cat="bolt2-dark" stroke="#55FF55" width="0.5"/>
+				<line cat="roam2" stroke="#00AA00" width="0.5"/>
+				<line cat="roam2-dark" stroke="#55FF55" width="0.5"/>
 			</m>
 			<m k="cycleway_lane" v="cw_lane_both|cw_lane_right|cw_lane_left|cw_lane_oneway">
-				<line cat="bolt2" stroke="#0055FF" width="0.5" dasharray="6,3" cap="butt"/>
-				<line cat="bolt2-dark" stroke="#55AAFF" width="0.5" dasharray="6,3" cap="butt"/>
-				<line cat="roam2" stroke="#0055FF" width="0.5" dasharray="6,3" cap="butt"/>
-				<line cat="roam2-dark" stroke="#55AAFF" width="0.5" dasharray="6,3" cap="butt"/>
+				<line cat="bolt2" stroke="#00AA00" width="0.5" dasharray="6,3" cap="butt"/>
+				<line cat="bolt2-dark" stroke="#AAFFAA" width="0.5" dasharray="6,3" cap="butt"/>
+				<line cat="roam2" stroke="#00AA00" width="0.5" dasharray="6,3" cap="butt"/>
+				<line cat="roam2-dark" stroke="#AAFFAA" width="0.5" dasharray="6,3" cap="butt"/>
 			</m>
 		</m>
 	</m>
@@ -365,16 +365,16 @@
 			</m>
 			<m e="way" k="highway" v="cycleway" zoom-min="9" select="first">
 				<m k="surface" v="raw|gravel|unpaved|compacted|rough_paved">
-					<line cat="bolt2" stroke="#0000FF" width="1.4" dasharray="10,2" cap="butt" outline="bolt2-halo"/>
-					<line cat="bolt2-dark" stroke="#00AAFF" width="1.4" dasharray="10,2" cap="butt" outline="bolt2-dark-halo"/>
-					<line cat="roam2" stroke="#0000FF" width="1.4" dasharray="10,2" cap="butt" outline="roam2-halo"/>
-					<line cat="roam2-dark" stroke="#00AAFF" width="1.4" dasharray="10,2" cap="butt" outline="roam2-dark-halo"/>
+					<line cat="bolt2" stroke="#00AA00" width="1.4" dasharray="10,2" cap="butt" outline="bolt2-halo"/>
+					<line cat="bolt2-dark" stroke="#55FF55" width="1.4" dasharray="10,2" cap="butt" outline="bolt2-dark-halo"/>
+					<line cat="roam2" stroke="#00AA00" width="1.4" dasharray="10,2" cap="butt" outline="roam2-halo"/>
+					<line cat="roam2-dark" stroke="#55FF55" width="1.4" dasharray="10,2" cap="butt" outline="roam2-dark-halo"/>
 				</m>
 				<m k="highway" v="cycleway">
-					<line cat="bolt2" stroke="#0000FF" width="1.6" outline="bolt2-halo"/>
-					<line cat="bolt2-dark" stroke="#00AAFF" width="1.6" outline="bolt2-dark-halo"/>
-					<line cat="roam2" stroke="#0000FF" width="1.6" outline="roam2-halo"/>
-					<line cat="roam2-dark" stroke="#00AAFF" width="1.6" outline="roam2-dark-halo"/>
+					<line cat="bolt2" stroke="#00AA00" width="1.6" outline="bolt2-halo"/>
+					<line cat="bolt2-dark" stroke="#55FF55" width="1.6" outline="bolt2-dark-halo"/>
+					<line cat="roam2" stroke="#00AA00" width="1.6" outline="roam2-halo"/>
+					<line cat="roam2-dark" stroke="#55FF55" width="1.6" outline="roam2-dark-halo"/>
 				</m>
 			</m>
 		</m>
@@ -463,16 +463,16 @@
 			</m>
 			<m e="way" k="highway" v="cycleway" zoom-min="9" select="first">
 				<m k="surface" v="raw|gravel|unpaved|compacted|rough_paved">
-					<line cat="bolt2" stroke="#0000FF" width="1.4" dasharray="3,3" cap="butt"/>
-					<line cat="bolt2-dark" stroke="#00AAFF" width="1.4" dasharray="3,3" cap="butt"/>
-					<line cat="roam2" stroke="#0000FF" width="1.4" dasharray="3,3" cap="butt"/>
-					<line cat="roam2-dark" stroke="#00AAFF" width="1.4" dasharray="3,3" cap="butt"/>
+					<line cat="bolt2" stroke="#00AA00" width="1.4" dasharray="3,3" cap="butt"/>
+					<line cat="bolt2-dark" stroke="#55FF55" width="1.4" dasharray="3,3" cap="butt"/>
+					<line cat="roam2" stroke="#00AA00" width="1.4" dasharray="3,3" cap="butt"/>
+					<line cat="roam2-dark" stroke="#55FF55" width="1.4" dasharray="3,3" cap="butt"/>
 				</m>
 				<m k="highway" v="cycleway">
-					<line cat="bolt2" stroke="#0000FF" width="1.6" dasharray="3,3" cap="butt"/>
-					<line cat="bolt2-dark" stroke="#00AAFF" width="1.6" dasharray="3,3" cap="butt"/>
-					<line cat="roam2" stroke="#0000FF" width="1.6" dasharray="3,3" cap="butt"/>
-					<line cat="roam2-dark" stroke="#00AAFF" width="1.6" dasharray="3,3" cap="butt"/>
+					<line cat="bolt2" stroke="#00AA00" width="1.6" dasharray="3,3" cap="butt"/>
+					<line cat="bolt2-dark" stroke="#55FF55" width="1.6" dasharray="3,3" cap="butt"/>
+					<line cat="roam2" stroke="#00AA00" width="1.6" dasharray="3,3" cap="butt"/>
+					<line cat="roam2-dark" stroke="#55FF55" width="1.6" dasharray="3,3" cap="butt"/>
 				</m>
 			</m>
 		</m>

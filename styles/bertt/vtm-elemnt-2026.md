@@ -6,12 +6,12 @@ Style file: [vtm-elemnt-2026.xml](vtm-elemnt-2026.xml)
 
 ## Design choices
 
-- **Bike-first emphasis.** Small paths you can ride are the stars of the map: cycleways, tracks and paths are drawn last (on top), in saturated colours with a thin halo so they stay visible on forest and grass. Their colour tells you the type: blue for cycleways, orange for tracks, red-orange dashes for paths, and purple when the path is explicitly open to bikes.
+- **Bike-first emphasis.** Small paths you can ride are the stars of the map: cycleways, tracks and paths are drawn last (on top), in saturated colours with a thin halo so they stay visible on forest and grass. Their colour tells you the type: green for cycleways (so they are never confused with the blue of water), orange for tracks, red-orange dashes for paths, and purple when the path is explicitly open to bikes.
 - **Surface hints through line style.** Solid lines are good surfaces; dashes get shorter as the surface gets softer (`tracktype` grade 1 to 5, unpaved cycleways).
 - **Cars are in the background.** Roads are drawn first, thin, with a soft grey outline and light colours. Motorways are grey and the least prominent.
 - **No-cycling is explicit.** Motorways and any road with `bicycle=no` get red dashes and a repeated "no bikes" sign, so it is clear where you cannot ride.
 - **Hiking paths stay visible.** Footways and paths that are not for bikes are brown and dotted, so they are readable but clearly different from bike routes.
-- **Road bike facilities.** Cycle tracks and lanes along roads (`cycleway_track`, `cycleway_lane`) get a thin blue line on the road, so a quiet bike-friendly road is easy to spot.
+- **Road bike facilities.** Cycle tracks and lanes along roads (`cycleway_track`, `cycleway_lane`) get a thin green line on the road, so a quiet bike-friendly road is easy to spot.
 - **64 colours only.** The ELEMNT Bolt 2 display can only show 64 colours (4 levels per RGB channel: `00`, `55`, `AA`, `FF`), so every colour in this style is taken from that palette. See [wahoo_colors_64.md](../../wahoo_colors_64.md) for all 64 colours.
 - **Solid colours instead of patterns.** Forest, wetland and other areas use flat light fills, so the style needs no external pattern images and renders cleanly on the small, sunlit screen.
 - **Light and dark variants.** Every colour has a light and a dark counterpart (Bolt2, Bolt2 dark, Roam2 and Roam2 dark). Roam2 uses the same colours as Bolt2. The dark variant lowers the background brightness and lifts the bike colours so they keep their contrast.
@@ -30,8 +30,8 @@ Rename `vtm-elemnt-2026.xml` to `vtm-elemnt.xml` to use it on the device, and ke
 
 | Feature | Line | Light | Dark | OSM tags |
 | ------- | ---- | ----- | ---- | -------- |
-| Cycleway (paved) | thick solid, white/dark halo | `#0000FF` | `#00AAFF` | `highway=cycleway` |
-| Cycleway (unpaved) | thick dashed | `#0000FF` | `#00AAFF` | `highway=cycleway` + `surface=raw/gravel/unpaved/compacted/rough_paved` |
+| Cycleway (paved) | thick solid, white/dark halo | `#00AA00` | `#55FF55` | `highway=cycleway` |
+| Cycleway (unpaved) | thick dashed | `#00AA00` | `#55FF55` | `highway=cycleway` + `surface=raw/gravel/unpaved/compacted/rough_paved` |
 | Track, good surface | solid | `#AA5500` | `#FFAA00` | `highway=track` + `tracktype=grade1/2` |
 | Track, grade 3 or unknown | long dashes | `#AA5500` | `#FFAA00` | `highway=track` + `tracktype=grade3/none` |
 | Track, soft surface | short dashes | `#AA5500` | `#FFAA00` | `highway=track` + `tracktype=grade4/5` |
@@ -46,8 +46,8 @@ Rename `vtm-elemnt-2026.xml` to `vtm-elemnt.xml` to use it on the device, and ke
 
 | Feature | Line | Light | Dark | OSM tags |
 | ------- | ---- | ----- | ---- | -------- |
-| Separate bike track along a road | thin line on the road | `#0000FF` | `#00AAFF` | `cycleway_track=*` |
-| Bike lane on a road | thin dashed line on the road | `#0055FF` | `#55AAFF` | `cycleway_lane=*` |
+| Separate bike track along a road | thin line on the road | `#00AA00` | `#55FF55` | `cycleway_track=*` |
+| Bike lane on a road | thin dashed line on the road | `#00AA00` | `#AAFFAA` | `cycleway_lane=*` |
 
 ## No cycling
 
@@ -65,10 +65,10 @@ Rename `vtm-elemnt-2026.xml` to `vtm-elemnt.xml` to use it on the device, and ke
 | Primary | `#FFAA55` | `#AA5500` |
 | Secondary | `#FFFF55` | `#555500` |
 | Tertiary | `#FFFFAA` | `#555555` |
-| Residential, living street, unclassified | `#FFFFFF` | `#555555` |
-| Service | `#FFFFFF` | `#555555` |
+| Residential, living street, unclassified | `#FFFFFF` | `#55AA55` |
+| Service | `#FFFFFF` | `#55AA55` |
 
-Roads have a thin outline (`#AAAAAA` light, `#000000` dark). Railways are grey with light ticks; trams are thin grey.
+Roads have a thin outline (`#55AA55` green light, `#000000` dark). Railways are grey with light ticks; trams are thin grey.
 
 ## Icons (points of interest)
 
