@@ -8,7 +8,7 @@ Style file: [vtm-elemnt-2026.xml](vtm-elemnt-2026.xml)
 
 - **Bike-first emphasis.** Small paths you can ride are the stars of the map: cycleways, tracks and paths are drawn last (on top), in saturated colours with a thin halo so they stay visible on forest and grass. Their colour tells you the type: green for cycleways (so they are never confused with the blue of water), orange for tracks, red-orange dashes for paths, and purple when the path is explicitly open to bikes.
 - **Surface hints through line style.** Solid lines are good surfaces; dashes get shorter as the surface gets softer (`tracktype` grade 1 to 5, unpaved cycleways).
-- **Cars are in the background.** Roads are drawn first, thin, with a soft grey outline and light colours. Motorways are grey and the least prominent.
+- **Cars are in the background.** Roads are drawn first, thin, with a soft green outline and light colours. Motorways are grey and the least prominent.
 - **No-cycling is explicit.** Motorways and any road with `bicycle=no` get red dashes and a repeated "no bikes" sign, so it is clear where you cannot ride.
 - **Hiking paths stay visible.** Footways and paths that are not for bikes are brown and dotted, so they are readable but clearly different from bike routes.
 - **Road bike facilities.** Cycle tracks and lanes along roads (`cycleway_track`, `cycleway_lane`) get a thin green line on the road, so a quiet bike-friendly road is easy to spot.
