@@ -34,13 +34,14 @@ Community styles live in `styles/<username>/<style-name>/` and each contains a `
 
 | Style | Author | Description |
 | ----- | ------ | ----------- |
-| *No styles yet, be the first!* | | |
+| [vtm-elemnt-2026](styles/bertt/vtm-elemnt-2026.md) ([xml](styles/bertt/vtm-elemnt-2026.xml)) | [bertt](https://github.com/bertt) | Modern cycling style: bike and hiking paths on top, muted roads, no-cycling markings, POI icons, light and dark variants, 64 colors only. |
+| [vtm-elemnt](styles/bertt/vtm-elemnt.xml) | [bertt](https://github.com/bertt) | Variant of the default style. |
 
 ### Featured styles
 
 Especially nice styles get an extra mention here. 🏆
 
-*Nothing yet, be the first!*
+*Nothing yet.*
 
 ## Using a style
 
