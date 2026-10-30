@@ -242,21 +242,21 @@
 				<line cat="roam2-dark" stroke="#555500" width="1.9" outline="roam2-dark-casing"/>
 			</m>
 			<m e="way" k="highway" v="tertiary|tertiary_link" zoom-min="11">
-				<line cat="bolt2" stroke="#FFFFAA" width="1.8" outline="bolt2-casing"/>
+				<line cat="bolt2" stroke="#FFD84D" width="1.8" outline="bolt2-casing"/>
 				<line cat="bolt2-dark" stroke="#555555" width="1.8" outline="bolt2-dark-casing"/>
-				<line cat="roam2" stroke="#FFFFAA" width="1.8" outline="roam2-casing"/>
+				<line cat="roam2" stroke="#FFD84D" width="1.8" outline="roam2-casing"/>
 				<line cat="roam2-dark" stroke="#555555" width="1.8" outline="roam2-dark-casing"/>
 			</m>
 			<m e="way" k="highway" v="residential|living_street|road|unclassified" zoom-min="12">
-				<line cat="bolt2" stroke="#FFFFFF" width="1.5" outline="bolt2-casing"/>
+				<line cat="bolt2" stroke="#00AA00" width="1.5" outline="bolt2-casing"/>
 				<line cat="bolt2-dark" stroke="#55AA55" width="1.5" outline="bolt2-dark-casing"/>
-				<line cat="roam2" stroke="#FFFFFF" width="1.5" outline="roam2-casing"/>
+				<line cat="roam2" stroke="#00AA00" width="1.5" outline="roam2-casing"/>
 				<line cat="roam2-dark" stroke="#55AA55" width="1.5" outline="roam2-dark-casing"/>
 			</m>
 			<m e="way" k="highway" v="service" zoom-min="14">
-				<line cat="bolt2" stroke="#FFFFFF" width="0.9" outline="bolt2-casing"/>
+				<line cat="bolt2" stroke="#00AA00" width="0.9" outline="bolt2-casing"/>
 				<line cat="bolt2-dark" stroke="#55AA55" width="0.9" outline="bolt2-dark-casing"/>
-				<line cat="roam2" stroke="#FFFFFF" width="0.9" outline="roam2-casing"/>
+				<line cat="roam2" stroke="#00AA00" width="0.9" outline="roam2-casing"/>
 				<line cat="roam2-dark" stroke="#55AA55" width="0.9" outline="roam2-dark-casing"/>
 			</m>
 		</m>
